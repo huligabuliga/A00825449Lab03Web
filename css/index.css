@@ -12,3 +12,84 @@ body {
   width: 50px;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav {
+  background-color: gray;
+  margin-left: 10px
+}
+
+.menu {
+  display:none;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.product {
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+    text-align: center;
+}
+
+/* Tablet */
+  @media (min-width: 768px) and (max-width: 1024px)  {
+    
+    header{
+      display: flex;
+      flex-direction: row;
+      
+     
+    }
+
+
+
+    .social{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style-type: none;
+    }
+
+
+
+  }
+
+/* big screens */
+@media (min-width: 1025px) {
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    
+   
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+}
+
+
+
